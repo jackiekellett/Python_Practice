@@ -23,28 +23,65 @@
 
 # print(item_5)
 
-print('Camping List')
-# ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+########################################
+########################################
+
+# #    Camping List
+# # ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+# supplies = ['tent', 'sleeping bag', 'sleeping bag', 'water', 'marshmallows', 'chocolate', 'graham crackers', 'lighter', 'lantern', 'mug']
+
+# # Make a campsite with the Name, Lot number, Temperature, Dangerous?
+# camp_site = ['Mammoth Cave', 200, 76.4, False]
+
+# # Add items to the Supplies list using Append
+# #supplies.append('toilet paper')
+# #supplies.append('pillow')
+
+# # Add multiple items to list using Extend
+# #supplies.extend(['toilet paper', 'pillow', 'pillow'])
+
+# # Add item to the beginning of your list using Insert
+# # the first value is the index, the second is the data to add
+# supplies.insert(0, 'toilet paper')
+# #print(supplies)
+
+# # What happens when you try to Insert something at the end of the list?
+# supplies.insert(-1, 'pillow')
+# print(supplies)
+# ### This places the item SECOND TO LAST since it is INSERTING
+
+########################################
+########################################
+
+#    Camping List
+# ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 supplies = ['tent', 'sleeping bag', 'sleeping bag', 'water', 'marshmallows', 'chocolate', 'graham crackers', 'lighter', 'lantern', 'mug']
 
 # Make a campsite with the Name, Lot number, Temperature, Dangerous?
 camp_site = ['Mammoth Cave', 200, 76.4, False]
 
-# Add items to the Supplies list using Append
-#supplies.append('toilet paper')
-#supplies.append('pillow')
+# # You packed an extra sleeping bag, get rid of it!
+# ### CLEAR
+# supplies.clear()
+# print(supplies)
+# ### OH NO!! Clear DELETED THE WHOLE LIST
 
-# Add multiple items to list using Extend
-#supplies.extend(['toilet paper', 'pillow', 'pillow'])
+# # You packed an extra sleeping bag, get rid of it!
+# ### REMOVE
+# supplies.remove('sleeping bag')
+# print(supplies)
+# ### SUCCESS
 
-# Add item to the beginning of your list using Insert
-# the first value is the index, the second is the data to add
-supplies.insert(0, 'toilet paper')
+# You packed an extra sleeping bag, get rid of it!
+### POP
+supplies.pop(1)
 print(supplies)
+### SUCCESS
 
-# What happens when you try to Insert something at the end of the list?
-supplies.insert(-1, 'pillow')
+# What happens if you POP the same index multiple times?
+supplies.pop(1)
+supplies.pop(1)
 print(supplies)
-# This places the item SECOND TO LAST since it is INSERTING
-
+### It deletes the item at index 1, then reevaluates the index and then removes the item now at index 1
