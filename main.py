@@ -1,14 +1,6 @@
 #  Automated Barista
 # ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
-# Price variable
-price = 5
-# Tax variable
-tax = 0
-
-# Menu string
-menu = "Latte, Coffee, Espresso, Americano"
-
 # Welcome the customer
 print("\nHowdy! Welcome to the Computer Coffee House!")
 
@@ -24,11 +16,36 @@ if name == "Quinn":
     else:
         print("Okay, just checking!")
 
+
+# Menu string
+menu = "Latte, Coffee, Espresso, Americano, Frappuccino"
+
 # Get the customer's order
 order = input("Thanks for coming in today, " + name + "! What are you having today? Here's what we have on the menu:\n" + menu + "\n")
+
+if order == "Latte":
+    price = 5
+
+if order == "Coffee":
+    price = 2
+
+if order == "Espresso":
+    price = 3
+
+if order == "Americano":
+    price = 4
+
+if order == "Frappuccino":
+    price = 8
+
 # Get drink amount
 amount = input("How many " + order + "s would you like?\n")
+
+# Tax variable
+tax = 0
+
 # Calculate the total
 total = (1 + tax) * (price * int(amount))
+
 # Tell the customer the total
 print("Alright, " + name + ", your total today is: $" + str(total))
