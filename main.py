@@ -13,27 +13,27 @@ banned_list = ['Quinn', 'Miranda', 'Rose']
 if name in banned_list:
     banned_status = str.capitalize(input("Are you banned?\n"))
     if banned_status == "Yes":
-            print("You're not welcome here, " + name + "! Get out!!!")
+            print(str.upper("You're not welcome here, " + name + "! Get out!!!"))
             exit()
     else:
-        print("Okay, just checking!")
+        print("Okay, just checking!\n")
 
 # Menu string
 menu = "Latte, Coffee, Espresso, Americano, Frappuccino"
 
 # Get the customer's order
-order = input("Thanks for coming in today, " + name + "! What are you having today? Here's what we have on the menu:\n" + menu + "\n")
+order = str.capitalize(input("Thanks for coming in today, " + name + "! What are you having today? Here's what we have on the menu:\n" + menu + "\n"))
 
 # Menu Pricing
-if order == "latte":
+if order == "Latte":
     price = 5
-elif order == "coffee":
+elif order == "Coffee":
     price = 2
-elif order == "espresso":
+elif order == "Espresso":
     price = 3
-elif order == "americano":
+elif order == "Americano":
     price = 4
-elif order == "frappuccino":
+elif order == "Frappuccino":
     price = 8
 else:
     print("Sorry, we don't have that here.")
