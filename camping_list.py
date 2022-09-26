@@ -7,5 +7,6 @@ supplies = ['tent', 'sleeping bag', 'sleeping bag', 'water', 'marshmallows', 'ch
 camp_site = ['Mammoth Cave', 200, 76.4, False]
 
 supplies.append('toilet paper')
+supplies.append('pillow')
 
 print(supplies)
