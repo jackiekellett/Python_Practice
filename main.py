@@ -5,16 +5,16 @@
 print("\nHowdy! Welcome to the Computer Coffee House!")
 
 # Name variable / Get the customer's name
-name = input("What is your name?\n")
+name = str.capitalize(input("What is your name?\n"))
 
-
+banned_list = ['Quinn', 'Miranda', 'Rose']
 
 # Refuse service to banned customers
-if name == "quinn" or name == "miranda":
-    banned_status = input("Are you banned?\n")
-    if banned_status == "yes":
-        print("You're not welcome here, " + name + "! Get out!!!")
-        exit()
+if name in banned_list:
+    banned_status = str.capitalize(input("Are you banned?\n"))
+    if banned_status == "Yes":
+            print("You're not welcome here, " + name + "! Get out!!!")
+            exit()
     else:
         print("Okay, just checking!")
 
