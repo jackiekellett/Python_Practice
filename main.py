@@ -17,8 +17,12 @@ name = input("What is your name?\n")
 
 # Refuse service to banned customers
 if name == "Quinn":
-    print("You're not welcome here, " + name + "! Get out!!!")
-    exit()
+    banned_status = input("Are you banned?\n")
+    if banned_status == "Yes":
+        print("You're not welcome here, " + name + "! Get out!!!")
+        exit()
+    else:
+        print("Okay, just checking!")
 
 # Get the customer's order
 order = input("Thanks for coming in today, " + name + "! What are you having today? Here's what we have on the menu:\n" + menu + "\n")
