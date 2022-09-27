@@ -1,0 +1,20 @@
+import numpy as np
+import pandas as pd
+
+import random
+
+def guess(x):
+    random_number = random.randint(1, x)
+    guess = 0
+    while guess != random_number:
+        guess = int(input(f'Guess an integer between 1 and {x}: \n'))
+        if 1 <= guess <= 10:
+            if guess < random_number:
+                print('Try again. You were too low.')
+            elif guess > random_number:
+                print('Guess again. You were too high.')
+        else:
+            print(f"Really? {guess} isn't between 1 and {x}. Duh. Try again.")
+    print(f"Congrats! {random_number} is correct!")
+
+guess(10)
